@@ -62,7 +62,7 @@ def is_dark_mode():
 # Function to create and run the system tray icon
 def setup_tray_icon():
     theme = 'dark' if is_dark_mode() else 'light'
-    image = Image.open(f'resize_{theme}.ico')
+    image = Image.open(f'{theme}.ico')
     menu = Menu(MenuItem('Exit', on_quit))
     icon = Icon('WindowManager', image, menu=menu)
     icon.run()
