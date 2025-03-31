@@ -1,4 +1,4 @@
 .ipynb_checkpoints/*
 build/*
-dist/*.exe
+dist/*
 *.spec
